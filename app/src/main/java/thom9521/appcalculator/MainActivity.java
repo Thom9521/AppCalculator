@@ -74,5 +74,22 @@ public class MainActivity extends AppCompatActivity {
                 resultView.setText(result + ""); //"" er nødvendigt for at appen ikke crasher
             }
         });
+
+        Button clearBtn = (Button) findViewById(R.id.clearBtn);
+        clearBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText editText1 = (EditText) findViewById(R.id.editText1);
+                EditText editText2 = (EditText) findViewById(R.id.editText2);
+                TextView resultView = (TextView) findViewById(R.id.resultTextView);
+
+                //double num1 = Double.parseDouble(editText1.getText().toString());
+                //double num2 = Double.parseDouble(editText2.getText().toString());
+
+                editText1.setText(null);
+                editText2.setText(null);
+                resultView.setText("Result");
+            }
+        });
     }
 }
