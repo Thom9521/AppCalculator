@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
                 EditText editText2 = (EditText) findViewById(R.id.editText2);
                 TextView resultView = (TextView) findViewById(R.id.resultTextView);
 
-                int num1 = Integer.parseInt(editText1.getText().toString());
-                int num2 = Integer.parseInt(editText2.getText().toString());
+                double num1 = Double.parseDouble(editText1.getText().toString());
+                double num2 = Double.parseDouble(editText2.getText().toString());
                 double result = num1 + num2;
                 resultView.setText(result + ""); //"" er nødvendigt for at appen ikke crasher
             }
@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 EditText editText2 = (EditText) findViewById(R.id.editText2);
                 TextView resultView = (TextView) findViewById(R.id.resultTextView);
 
-                int num1 = Integer.parseInt(editText1.getText().toString());
-                int num2 = Integer.parseInt(editText2.getText().toString());
+                double num1 = Double.parseDouble(editText1.getText().toString());
+                double num2 = Double.parseDouble(editText2.getText().toString());
                 double result = num1 - num2;
                 resultView.setText(result + ""); //"" er nødvendigt for at appen ikke crasher
             }
@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
                 EditText editText2 = (EditText) findViewById(R.id.editText2);
                 TextView resultView = (TextView) findViewById(R.id.resultTextView);
 
-                int num1 = Integer.parseInt(editText1.getText().toString());
-                int num2 = Integer.parseInt(editText2.getText().toString());
+                double num1 = Double.parseDouble(editText1.getText().toString());
+                double num2 = Double.parseDouble(editText2.getText().toString());
                 double result = num1 * num2;
                 resultView.setText(result + ""); //"" er nødvendigt for at appen ikke crasher
             }
@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
                 EditText editText2 = (EditText) findViewById(R.id.editText2);
                 TextView resultView = (TextView) findViewById(R.id.resultTextView);
 
-                double num1 = Integer.parseInt(editText1.getText().toString());
-                double num2 = Integer.parseInt(editText2.getText().toString());
+                double num1 = Double.parseDouble(editText1.getText().toString());
+                double num2 = Double.parseDouble(editText2.getText().toString());
                 double result = num1 / num2;
                 resultView.setText(result + ""); //"" er nødvendigt for at appen ikke crasher
             }
