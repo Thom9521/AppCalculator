@@ -1,5 +1,7 @@
 package thom9521.appcalculator;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -86,6 +88,20 @@ public class MainActivity extends AppCompatActivity {
                 editText1.setText(null);
                 editText2.setText(null);
                 resultView.setText("Result");
+            }
+        });
+
+        Button githubBtn = (Button) findViewById(R.id.githubBtn);
+        githubBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String github = "https://github.com/Thom9521/AppCalculator";
+                Uri webaddress = Uri.parse(github);
+
+                Intent goToGithub = new Intent(Intent.ACTION_VIEW, webaddress);
+                if (goToGithub.resolveActivity(getPackageManager()) != null){
+                    startActivity(goToGithub);
+                }
             }
         });
     }
